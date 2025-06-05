@@ -3,6 +3,7 @@ import RoundedButton from "../app/common/RoundedButton"
 import SlideUpText from '@/app/effects/SlideUpText'
 import { useInView,motion, useScroll, useTransform } from 'framer-motion'
 import snow from "../../public/images/snow.jpg"
+import Image from 'next/image'
 
 function Section2() {
    const textRef2=useRef(null)
@@ -20,7 +21,7 @@ function Section2() {
   return (
    <section className='hero-section min-h-[calc(100vh-0px)]  '>
      <div className="background-wrapper  py-[100px] px-4">
-  <img src={snow.src} className="background-video2"/>
+  <Image src={snow}  className="background-video2"/>
 <div className='background-rgba'> &nbsp;</div>
   
   <div className='breaker container items-center gap-[80px]'>
