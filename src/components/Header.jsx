@@ -26,7 +26,7 @@ function Header() {
   
   <header className={` transition-all duration-500 ease-in-out border-b ${isScrolled?"backdrop-blur-lg shadow-lg border-transparent max-h-[60px]":"bg-transparent border-transparent"}`}>
 <div className='container mx-auto w-full'>
-<div className={`block w-full text-center relative transition-all duration-300 ease-in-out px-4 ${isScrolled?"py-4":"py-[20px] md:py-[40px]"}`}>
+<div className={`block w-full text-center relative transition-all duration-300 ease-in-out ${isScrolled?"py-4":"py-[20px] md:py-[40px]"}`}>
 <div className='flex justify-between  relative w-full'>
     <Link prefetch href={"/"} className='text-center font-custom text-2xl inline-block tracking-normal'>
 <h1 className='my-0 text-center text-white'  > 
