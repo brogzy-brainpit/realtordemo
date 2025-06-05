@@ -39,7 +39,7 @@ export default function Home() {
       {/* <AnimatePresence mode="wait">
     {isLoading &&< Preloader/>}
     </AnimatePresence> */}
-    {/* <Header/> */}
+    <Header/>
       <Landing />
       <Section2 />
       {/* <Intro /> */}

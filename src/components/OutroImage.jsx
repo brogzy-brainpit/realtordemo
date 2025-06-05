@@ -20,8 +20,10 @@ export default function OutroImage() {
       offset:["0.8 end",'end start']
     })
     return (
-        <div ref={textRef2} className='z-10 max-h-[90vh] flex justify-center -mb-[8%] relative container mx-auto'>
-            <div   once={true}  className="w-full h-full  relative overflow-hidden shadow-2xl">
+        <div ref={textRef2} className='z-10 max-h-[90vh] w-screen flex justify-center -mb-[8%] relative container mx-auto'>
+            <div  className="w-full h-full  relative overflow-hidden shadow-2xl">
+               <motion.img  style={{scale}} className='object-cover' src={"https://cdn.prod.website-files.com/667e7532b5527c435094a6f9/673ef3cfa3591d5d6b0ba542_winter4%20(1).jpg"} />
+              
               <div className='absolute top-0 left-0 w-full h-full'>
                <motion.img  style={{scale}} className='object-cover' src={"https://cdn.prod.website-files.com/667e7532b5527c435094a6f9/673ef3cfa3591d5d6b0ba542_winter4%20(1).jpg"} />
               </div>
