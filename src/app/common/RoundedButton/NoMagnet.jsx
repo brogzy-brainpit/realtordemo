@@ -5,7 +5,7 @@ import styles from './style.module.scss';
 import gsap from 'gsap';
 import Magnetic from '../Magnetic';
 
-export default function index({children, backgroundColor="#0096a5", ...attributes}) {
+export default function Nomagnet({children, backgroundColor="#0096a5", ...attributes}) {
 
   const circle = useRef(null);
   let timeline = useRef(null);
