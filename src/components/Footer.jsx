@@ -20,7 +20,7 @@ export default function Footer() {
       offset:["0.6 end",'end 0.8']
     })
     return (
-        <div className=' min-h-[80vh] flex justify-end flex-col relative text-center bg-[#140D07]  py-[8vh] mx-auto'>
+        <div className=' -z-10 min-h-[80vh] flex justify-end flex-col relative text-center bg-[#140D07]  py-[8vh] mx-auto'>
             <div ref={textRef2} once={true}  className="breaker gap-[30px] container mx-auto border-b border-gray-600 bglate-500 hf w-full flex py-[50px] box-border">
                <div className='breaker-child'>
                  <div className='flex items-start flex-col'>
