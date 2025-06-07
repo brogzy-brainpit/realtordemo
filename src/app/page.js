@@ -12,6 +12,7 @@ import Header from '@/components/Header';
 import Services from '@/components/Services';
 import OutroImage from '@/components/OutroImage';
 import Footer from '@/components/Footer';
+import OurNumbers from '@/components/OurNumbers';
 export default function Home() {
  const [isLoading,setIsLoading]=useState(true)
 
@@ -41,6 +42,7 @@ export default function Home() {
     </AnimatePresence> */}
     <Header/>
       <Landing />
+      <OurNumbers/>
       <Section2 />
       {/* <Intro /> */}
       <Services/>

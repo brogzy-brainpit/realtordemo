@@ -27,7 +27,7 @@ function Section2() {
   <div className='breaker container items-center gap-[80px]'>
     <div className='breaker-child-01 flex-col flex gap-[6vh]'>
 <p className='font-normal text-para text-white'>Timeless Elegance</p>
-    <h1 ref={textRef2} once={true}  className=" text-white text-[7.5vw] font-custom uppercase text-center max-w-[90vw] md:max-w-[50vw] leading-none gap-3 flex items-cente justif-center flex-wrap" gap='10px'>
+    <h1 ref={textRef2} once={true}  className=" text-white text-heading font-custom uppercase text-center max-w-[90vw] md:max-w-[50vw] leading-none gap-3 flex items-cente justif-center flex-wrap" gap='10px'>
 {secondPara2.map((word,i)=>{
     var start= i/secondPara2.length;
     var end= start+ (1/secondPara2.length);

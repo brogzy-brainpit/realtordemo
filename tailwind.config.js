@@ -15,9 +15,9 @@ module.exports = {
          fontSize:{
         'regular': 'clamp(24px, 3vw, 32px)',
         'button': 'clamp(14px, 3.5vw, 18px)',
-        'heading': 'clamp(60px, 10vw, 130px)',
-        'footer': 'clamp(50px, 10vw, 60px)',
-        'heading2': 'clamp(45px, 8vw, 100px)',
+        'heading': 'clamp(60px, 10vw, 90px)',
+        'footer': 'clamp(50px, 8vw, 60px)',
+        'heading2': 'clamp(45px, 8vw, 80px)',
         'para': 'clamp(18px, 1vw, 28px)',
       },
       lineHeight:{

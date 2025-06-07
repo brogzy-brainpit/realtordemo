@@ -1,11 +1,18 @@
-import React from 'react'
-import RoundedButton from "../app/common/RoundedButton"
+import React, { useEffect } from 'react'
+import RoundedButton from "../app/common/RoundedButton";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Services() {
+    useEffect(() => {
+    AOS.init({
+        duration: 500, // Animation duration
+        easing: 'ease-in-out-back', // Animation easing
+
+    });
+  }, []);
   return (
-    <div className=' py-[100px] px-4 bg-[#EBEFF6]'>
-
-
+    <div className=' py-[60px] px-4 bg-[#EBEFF6]'>
 
         <div className='breaker container items-center gap-[80px]'>
     <div className='breaker-child-01 flex-col flex gap-[6vh]'>
@@ -23,9 +30,9 @@ function Services() {
    </p>
     </div>
   </div>
-  <div className='container flex m-auto my-[20vh] '>
-    <div className='breaker md:gap-4 gap-[60px]'>
-        <div className=' bg-[#C9FD74] p-[30px] relative breaker-child rounded-lg'>
+  <div className='container flex m-auto my-[20px] md:my-[15vh]'>
+    <div  className='breaker md:gap-4 gap-[60px]'>
+        <div data-aos={"fade-up"} data-aos-delay="200" className=' bg-[#C9FD74] p-[30px] relative breaker-child rounded-2xl drop-shadow-lg'>
             <p className='text-black opacity-[0.43] absolute -top-[13%] right-2 font-custom text-[120px] leading-[120px]'>
                 01
             </p>
@@ -41,7 +48,7 @@ function Services() {
               </p>
             </RoundedButton>
             </div>
-             <div className=' bg-white p-[30px] relative breaker-child rounded-lg'>
+             <div data-aos={"fade-up"} data-aos-delay="300" className=' bg-white p-[30px] relative breaker-child rounded-2xl drop-shadow-lg'>
             <p className='text-black opacity-[0.43] absolute -top-[13%] right-2 font-custom text-[120px] leading-[120px]'>
                 02
             </p>
@@ -57,7 +64,7 @@ function Services() {
               </p>
             </RoundedButton>
             </div>
-             <div className=' bg-[#C9FD74] p-[30px] relative breaker-child rounded-lg'>
+             <div data-aos={"fade-up"} data-aos-delay="400" className=' bg-[#C9FD74] p-[30px] relative breaker-child rounded-2xl drop-shadow-lg'>
             <p className='text-black opacity-[0.43] absolute -top-[13%] right-2 font-custom text-[120px] leading-[120px]'>
                 03
             </p>

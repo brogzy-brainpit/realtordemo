@@ -45,28 +45,22 @@ function Landing() {
   </video>
 <div className='background-rgba'> &nbsp;</div>
   <div class="content flex justify-center items-center h-full flex-col gap-4 p-4">
-  <div class=" w-fit b-slate-50 content flex justify-end items-center h-full flex-col gap-10">
-    
-    {/* <h1 className='text-center font-custom text-heading leading-[0.95] md:leading-[100px]'>
-     Your Key
-       <br/>
-       to Gstaad
-</h1> */}
-  
+  <div class=" w-fit b-slate-50 content flex justify-end md:justify-center items-center h-full flex-col gap-4">
             <h1 className="font-custom text-heading leading-[0.95] md:leading-[100px]' uppercase text-center max-w-[80vw] md:max-w-[40vw] gap-3 flex items-center justify-center flex-wrap">
 
-   <SlideUpText duration={0.04} delay={0.1} className=" capitalize font-custom text-heading leading-[0.95] inline-flex overflow-hidden" 
-   text={` Your Key to gstaad`}/>
+   <SlideUpText duration={0.04} delay={0.1} className=" capitalize font-custom text-heading inline-flex overflow-hidden" 
+   text={` Your Key to Digital Marketing`}/>
        </h1>
+<p className='font-normal text-para text-center max-w-[96vw] md:max-w-[40vw]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi suscipit distinctio, a necessitatibus id vero beatae sit? Sapiente?</p>
 <RoundedButton>
   <p className='font-normal text-button ls-05'>
   Learn More
 
   </p>
 </RoundedButton>
-
-<p className='font-normal text-para text-center max-w-[96vw] md:max-w-[40vw]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil inventore eum ducimus perspiciatis officiis, nemo porro aspernatur tenetur commodi, quasi sequi veniam iste. Consectetur eligendi placeat!</p>
+ 
   </div>
+
 
   <div ref={textRef} className='overflow-hidden absolute right-[15%] top-[30%] bg-slate-30 hidden md:flex md:flex-row flex-col'>
     <motion.div variants={reveal}  initial="initial" animate={inView?"enter":"exit"} exit="exit"  className='flex gap-8  md:flex-col flex-row justify-start items-center py-6 px-2'>
