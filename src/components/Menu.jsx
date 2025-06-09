@@ -41,6 +41,7 @@ export default function Index() {
                 </AnimatePresence>
             </motion.div>
             <Button isActive={isActive} toggleMenu={() => {setIsActive(!isActive)}}/>
+
         </div>
     )
 }

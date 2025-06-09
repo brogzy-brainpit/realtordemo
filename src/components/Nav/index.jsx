@@ -13,7 +13,7 @@ export default function index() {
                 const { title, href } = link;
                 return (
                     <div key={`b_${i}`} className={styles.linkContainer}>
-                        <motion.div
+                        <motion.div 
                           href={href}
                           custom={i}
                           variants={perspective}
@@ -21,11 +21,11 @@ export default function index() {
                           animate="enter"
                           exit="exit"
                         >
-                            <Magnetic>
-                                <a className='font-custom text-heading'>
+                            {/* <Magnetic> */}
+                                <a className='font-custom text-heading cursor-pointer text-white'>
                                 {title}
                             </a>
-                            </Magnetic>
+                            {/* </Magnetic> */}
                         </motion.div>
                     </div>
                 )
@@ -43,7 +43,7 @@ export default function index() {
                             initial="initial"
                             animate="enter"
                             exit="exit"
-                            key={`f_${i}`}
+                            key={`f_${i}`} className="cursor-pointer"
                         >
                             {title}
                         </motion.a>

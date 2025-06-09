@@ -1,5 +1,5 @@
 import React from 'react';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import {motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Background from '../../public/images/1.jpg';
 import Image from 'next/image';
@@ -7,22 +7,12 @@ import Link from 'next/link';
 
 
 export default function Footer() {
-    const textRef2=useRef(null)
-     const container = useRef();
-    const { scrollYProgress } = useScroll({
-      target: container,
-      offset: ['start start', 'end start']
-    })
-  const secondPara= "How i can Help?".split(" ")
-    const secondPara2= "Not your Regular Email Developer".split(" ")
-    const scale = useTransform(scrollYProgress, [0, 1], ["1", "2"])
-   const {scrollYProgress:ss}= useScroll({
-      target:textRef2,
-      offset:["0.6 end",'end 0.8']
-    })
+    const footerRef=useRef(null)
+      const inView= useInView(footerRef)
+  
     return (
-        <div className=' -z-10 min-h-[80vh] px-4 flex justify-end flex-col relative text-center bg-[#140D07]  py-[8vh] mx-auto'>
-            <div ref={textRef2} once={true}  className="breaker gap-[30px] container mx-auto border-b border-gray-600 bglate-500 hf w-full flex py-[50px] box-border">
+        <div ref={footerRef} className=' -z-10 min-h-[80vh] px-4 flex justify-end flex-col relative text-center bg-[#140D07]  py-[8vh] mx-auto'>
+            <div className="breaker gap-[30px] container mx-auto border-b border-gray-600 bglate-500 hf w-full flex py-[50px] box-border">
                <div className='breaker-child'>
                  <div className='flex items-start flex-col'>
                  <motion.h2  whileHover={{color:"#C9FD74",x:2,cursor:"pointer"}} 
@@ -70,7 +60,6 @@ export default function Footer() {
               <p className='text-gray-300 capitalize text-[16px] font-normal text-left '>socials</p>
               <div className='flex gap-3 w-full '>
                 <Link href={"#"}>
-                     {/* <img src={facebook.src} width={20} alt='logo'/> */}
                      <p className='text-[12px] text-gray-500 cursor-pointer capitalize font-normal'>facebook</p>
                 </Link>  
                 <Link target='blank' href={"https://www.instagram.com/"}>

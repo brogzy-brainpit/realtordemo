@@ -30,7 +30,7 @@ function Header() {
 <div className='flex justify-between  relative w-full'>
     <Link prefetch href={"/"} className='text-center font-custom text-2xl inline-block tracking-normal'>
 <h1 className='my-0 text-center text-white'  > 
-    Realtor
+   Logo
 </h1>
 </Link>
 <Menu/>

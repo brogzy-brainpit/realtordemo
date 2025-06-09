@@ -9,8 +9,8 @@ export default function Description() {
       target: container,
       offset: ['start start', 'end start']
     })
-  const secondPara= "How i can Help?".split(" ")
-    const secondPara2= "Not your Regular Email Developer".split(" ")
+  // const secondPara= "How i can Help?".split(" ")
+    const secondPara2= "Not your Regular Email Marketing Agency".split(" ")
     const opacity = useTransform(scrollYProgress, [0, 1], ["0", "1"])
    const {scrollYProgress:ss}= useScroll({
       target:textRef2,

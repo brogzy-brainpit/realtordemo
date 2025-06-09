@@ -5,20 +5,13 @@ import CountUp from 'react-countup';
 
 
 function OurNumbers() {
-    useEffect(() => {
-    AOS.init({
-        duration: 500, // Animation duration
-        easing: 'ease-in-out-back', // Animation easing
-    });
-  }, []);
-
   return (
     <div className='w-full px-4 py-[10vh] breaker container mx-auto '>
-<div className=' breaker-child flex flex-3 font-custom text-footer'>
+<div className=' breaker-child flex flex-3 font-custom text-footer pb-6'>
   Our Numbers Do the Talking for Us
 </div>
 
-     <div data-aos={"fade-up"} data-aos-delay="200"className='breaker-child flex-1'>
+     <div className='breaker-child flex-1'>
        <div className='breaker flex flex-col  w-full bged-400 justify-center items-center gap-0' >
 <div className='breaker-chil flex w-full justify-betwee'>
   <div className='bg-green-30 p-2 border  border-b-0 border-gray-700 flex justify-center items-center flex-col flex-1'>

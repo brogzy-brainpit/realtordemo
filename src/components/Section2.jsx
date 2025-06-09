@@ -1,11 +1,20 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import RoundedButton from "../app/common/RoundedButton"
 import SlideUpText from '@/app/effects/SlideUpText'
 import { useInView,motion, useScroll, useTransform } from 'framer-motion'
 import snow from "../../public/images/snow.jpg"
-import Image from 'next/image'
+import Image from 'next/image';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Section2() {
+   useEffect(() => {
+      AOS.init({
+          duration: 500, // Animation duration
+          easing: 'ease-in-out-back', // Animation easing
+  
+      });
+    }, []);
    const textRef2=useRef(null)
      const container = useRef();
     const { scrollYProgress } = useScroll({
@@ -36,16 +45,20 @@ function Section2() {
 </h1>
 {/* <h2 className='blur-[9.43px] text-white font-custom text-heading leading-[0.95] md:leading-[1]'>Embrace the Saanenland Lifestyle</h2 > */}
     </div>
-    <div className='breaker-child-02 w-[40%]'>
-<p className='text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>From the majestic Alps to the vibrant villages, the Saanenland boasts a harmonious blend of natural beauty and urban sophistication. Buying or renting property here means immersing yourself in a lifestyle characterized by security, stability, and exclusivity.</p>
+    <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000} className='breaker-child-02 w-[40%]'>
+<p className='text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe praesentium, laudantium totam pariatur optio, ipsum assumenda adipisci voluptatem ipsa sit veniam iure excepturi similique provident nihil sequi inventore, dolor ullam!
+  </p>
     </div>
   </div>
 
    
    
     <div className=' mt-[80px] breaker container items-center gap-[80px]'>
-    <div className='breaker-child-01 flex-col flex gap-[6vh]'>
-<p className='w-[90%] text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>From the majestic Alps to the vibrant villages, the Saanenland boasts a harmonious blend of natural beauty and urban sophistication. Buying or renting property here means immersing yourself in a lifestyle characterized by security, stability, and exclusivity.</p>
+    <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000} className='breaker-child-01 flex-col flex gap-[6vh]'>
+<p className='w-[90%] text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam doloremque repudiandae consequatur nihil eveniet impedit, cumque sunt earum aliquid fugit illum corrupti ad consequuntur ducimus debitis facere mollitia odit, dicta ipsum natus in tempora! Rerum incidunt non officia sint.
+  </p>
    
     </div>
     {/* <div className='breaker-child-02 w-[40%]'> */}

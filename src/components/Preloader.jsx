@@ -5,11 +5,11 @@ import introImage from "../../public/images/key.svg"
 
 const menuSlide={
     initial:{
-       scale: 2,
+       scale: 4,
         
     }, 
     enter:{
-        scale:1.6,
+        scale:4,
      transition:{duration:0.8, ease:[0.76, 0, 0.24, 1]},
 
     },
@@ -33,9 +33,12 @@ function Preloader() {
     //     }, index==0?1400:170);
     // },[index])
   return (
-    <motion.img  src={introImage.src} variants={menuSlide} initial="initial" exit="exit" className=' z-50  fixed w-[130vw] h-[110vh] flex flex-col items-center justify-center top-0 left-0 '> 
+    <div className='bg-red-600 w-full h-full'>
+
+    <motion.img  src={introImage.src} variants={menuSlide} initial="initial" exit="exit" className=' z-50  fixed w-[100vw] h-[100vh]'> 
    
    </motion.img>
+    </div>
   )
 }
 
