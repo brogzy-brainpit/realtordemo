@@ -24,7 +24,7 @@ function Landing() {
 
   return (
 
-   <section className=' hero-section h-[calc(100vh-0px)]'>
+   <section className=' hero-section h-[100vh] max-h-[100vh]'>
      <div class="background-wrapper">
      <div class=" custom-gradient pointer-events-none absolute left-0 top-0 z-30 h-screen w-full animate-pan-overlay opacity-5">
      </div>
@@ -56,7 +56,7 @@ function Landing() {
     {/* <SlideUpText center={false} duration={0.30} delay={0.10} className=" capitalize font-custom text-heading inline-flex overflow-hidden" 
     text={` Generative AI in the Fine Arts`}/>  */}
     <ScrambleText letters='+ - + - + - + - + - +' letter='R3H547F7NS10 10 iP LPO VZQW P086'  
-    className={'text-white tracking-tighter text-left uppercase text-[48px] leading-[48px] md:text-[90px] md:leading-[78px] lg:text-[123px] lg:leading-[118px] font-custom transition-all duration-200 ease-in-out'}
+    className={'text-white tracking-tighter text-left uppercase text-[64px] leading-[54px] md:text-[90px] md:leading-[78px] lg:text-[123px] lg:leading-[118px] font-custom transition-all duration-200 ease-in-out'}
      text="Real Estate Built for Growth" />
     </h1>
 <RoundedButton>
