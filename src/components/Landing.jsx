@@ -26,7 +26,7 @@ function Landing() {
 
    <section className=' hero-section h-[100vh] max-h-[100vh]'>
      <div class="background-wrapper">
-     <div class=" custom-gradient pointer-events-none absolute left-0 top-0 z-30 h-screen w-full animate-pan-overlay opacity-5">
+     <div class="custom-gradient pointer-events-none absolute left-0 top-0 z-30 h-full w-full animate-pan-overlay opacity-5">
      </div>
 
 <div className='background-video'> 
@@ -38,7 +38,7 @@ function Landing() {
   </motion.div>
 </div>
 <div className='background-rgba'> &nbsp;</div>
-<div className='md:block hidden absolute right-[40px] bottom-[50px]' >
+<div className='md:block hidden relative md:absolute sm:right-[40px] bottom-[50px]' >
   <motion.img 
    initial={{ scale: 0, y: 20 }}
       animate={!wait ? { scale: 1, y: 0 } : {}}
