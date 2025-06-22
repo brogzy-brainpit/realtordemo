@@ -2,7 +2,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "inverstor Aquisition copywriting & coaching for real Estate",
+  title: "demo website for real Estate",
   description: "discription of what you offer, a kind of killer copy that sell & converts",
 };
 
