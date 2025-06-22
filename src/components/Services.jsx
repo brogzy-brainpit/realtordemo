@@ -21,7 +21,7 @@ function Services() {
         <div className='breaker container items-center gap-[80px]'>
     <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000}  className='breaker-child-01 flex-col flex gap-[6vh]'>
 <p className='font-normal text-para text-white'>
-    Our Services
+    Our projects
     </p>
    
      {/* <div class=" blur-[9.43px text-white font-custom text-heading2 leading-[0.95] md:leading-[1]" >
@@ -77,17 +77,11 @@ function Services() {
     </div> */}
 
 
-  <div className="text-white font-custom text-heading2 leading-[0.95] md:leading-[1] py-20">
-      when&nbsp;
-      <span ref={ref} className="relative inline-block px-2 py-1">
-        <motion.span
-          className="relative z-10"
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 8 }}
-          transition={{ duration: 0.3, ease: 'easeInOut' }}
-        >
-          Conversion
-        </motion.span>
+  <div className="w-[80%] text-white font-custom text-heading2 leading-[0.95] md:leading-[1] py-20">
+      {/* Where &nbsp; Vision Meets */}
+     Projects That Define Our &nbsp;
+       <span className="relative z-10">
+        promise
 
         <svg
           className="absolute inset-0 w-full h-full z-0 pointer-events-none"
@@ -95,24 +89,25 @@ function Services() {
           preserveAspectRatio="none"
         >
           <motion.path
-            d="
-              M 20,30 
-              C 30,5 190,5 200,30 
-              C 190,55 30,55 20,30 
-              C 15,25 15,35 20,30
-            "
+            d="M20,35 
+               C10,10 210,10 200,35 
+               C190,60 30,60 20,35 
+               M25,30 
+               C20,15 200,15 195,30 
+               C190,45 30,45 25,30"
             stroke="#C9FD74"
-            strokeWidth="3"
+            strokeWidth="2"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: isInView ? 1 : 0 }}
-            transition={{ duration: 0.7, ease: 'easeInOut' }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
           />
         </svg>
       </span>
-      matters, choose Agency-Name
+     
+      
     </div>
 
 
@@ -153,7 +148,7 @@ function Services() {
     </div>
     <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000} className='breaker-child-02 w-[40%] pb-[40px]'>
 <p className='text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus esse, iure repudiandae quasi voluptate in odio impedit unde temporibus deserunt aut quo, obcaecati reiciendis quae quod tenetur, a corrupti.
+  From exclusive residential estates to high-performing commercial developments, our projects reflect our commitment to quality, innovation, and investor growth. We’ve successfully launched and managed properties in prime locations, each designed with modern architecture, efficient space planning, and long-term value in mind. 
    </p>
     </div>
   </div>

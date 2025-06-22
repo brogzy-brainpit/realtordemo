@@ -23,8 +23,7 @@ function Section2() {
       target: container,
       offset: ['start start', 'end start']
     })
-  const secondPara= "How i can Help?".split(" ")
-    const secondPara2= "Embrace the Saanen land Lifestyle".split(" ")
+    const secondPara2= "Driving Growth in R/Estate Dev.".split(" ")
    const {scrollYProgress:ss}= useScroll({
       target:textRef2,
       offset:["0.6 end",'end 0.8']
@@ -37,7 +36,7 @@ function Section2() {
   
   <div className='breaker container items-center gap-[80px]'>
     <div className='breaker-child-01 flex-col flex gap-[6vh]'>
-<p className='font-normal text-para text-white'>Timeless Elegance</p>
+<p className='font-normal text-para text-white'>[ COMPANY NAME ]</p>
   <motion.span
         ref={ref}
         className="inline-block transition-all duration-700"
@@ -61,7 +60,7 @@ function Section2() {
     </div>
     <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000} className='breaker-child-02 w-[40%]'>
 <p className='text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe praesentium, laudantium totam pariatur optio, ipsum assumenda adipisci voluptatem ipsa sit veniam iure excepturi similique provident nihil sequi inventore, dolor ullam!
+ [Company NAME] is proud to be at the forefront of residential and commercial real estate investing & development in Colorado, where we prioritize building strong relationships and leaving a timeless legacy.
   </p>
     </div>
   </div>

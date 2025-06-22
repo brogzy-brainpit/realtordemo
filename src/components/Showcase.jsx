@@ -15,7 +15,7 @@ import MouseWrapper from '@/app/effects/hooks/MouseWrapper'
 
 function Showcase() {
   return (
-<div className='flex flex-col gap-[5vh] py-[150px]  bg-[#222222]'>
+<div className='flex flex-col gap-[5vh] py-[80px]  bg-[#222222]'>
 <Service/>
 </div>
   )
@@ -66,6 +66,7 @@ const Service=()=>{
 
    {/* hidden image on small screen */}
    <div  ref={smallScreenImageRef} class="relative h-[60vh] block lg:hidden  overflow-cli">
+     
       <svg className="absolute z-40 -top-0 right-0 size-16 rotate-180 -scale-x-100" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9395 114C19.2774 114 24.3941 111.839 28.1518 107.999L108.202 26.1797C111.917 22.3833 114 17.2545 114 11.9096L114 1.35944e-06L114 114L0 114L13.9395 114Z" fill="#222222"></path></svg>
       <svg className="absolute z-40 bottom-0 left-0 size-8 rotate-90" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9395 114C19.2774 114 24.3941 111.839 28.1518 107.999L108.202 26.1797C111.917 22.3833 114 17.2545 114 11.9096L114 1.35944e-06L114 114L0 114L13.9395 114Z" fill="#222222"></path></svg>
   <div className='bg-blue- overflow-hidden  relatie h-full w-full'>
