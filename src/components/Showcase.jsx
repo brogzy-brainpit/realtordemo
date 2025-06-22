@@ -56,7 +56,7 @@ const Service=()=>{
         <div className='flex gap-4  breaker' >
      <div className='breaker-child mt-5'>
      {cards.map(({title,title2,img,subimg1,subimg2,paragraph,id},index)=>{
-   return <div  className='min-h-[100vh] my-4 mx-auto w-[95%] pt-10 flex gap-6 flex-col justify-start'>
+   return <div key={index} className='min-h-[100vh] my-4 mx-auto w-[95%] pt-10 flex gap-6 flex-col justify-start'>
    <h2 className='font-custom text-5xl max-w-[80%]'>
    {title}
    </h2>
@@ -142,7 +142,7 @@ function Card({i,url,img,title,targetScale,range,progress}) {
 
    const scaleCard = useTransform(progress, range, [1, targetScale]);
    return(   
-   <motion.div ref={targetRef} style={{scale:scaleCard,top:`calc(4% + ${i*35}px)`}} className= ' my-4 mx-auto w-[90%] rounded-[20px] overflow-hidden noise h-[100vh] sticky top-[0px]'>
+   <motion.div key={i} ref={targetRef} style={{scale:scaleCard,top:`calc(4% + ${i*35}px)`}} className= ' my-4 mx-auto w-[90%] rounded-[20px] overflow-hidden noise h-[100vh] sticky top-[0px]'>
   <div className='bg-blue- overflow-hidden  relatie h-full w-full'>
    <motion.div style={{scale}} className=' h-full w-full !cursor-pointer'>
     {/* <img src={img} className='object-cover h-full w-full'/> */}
