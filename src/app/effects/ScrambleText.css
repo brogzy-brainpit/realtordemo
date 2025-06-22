@@ -1,0 +1,55 @@
+.scramble-text {
+    cursor: pointer;
+    display: inline-block;
+  /* white-space: nowrap; */
+  word-spacing: 3px;
+  flex-wrap: nowrap;
+  }
+  @keyframes pan-overlay {
+    0% {
+      background-position-y: 0%;
+    }
+    100% {
+      background-position-y: 100%;
+    }
+  }
+  
+  
+.pan-overlay animation {
+    background-position-x: 0px;
+    background-position-y: -32.5438%;
+}
+
+.custom-gradient {
+    background: linear-gradient(#fbf6c0, #fbf6c0 3px, transparent 0, transparent 9px);
+    background-size: 100% 7px;
+}
+.opacity-5 {
+    opacity: .05;
+}
+.animate-pan-overlay {
+    animation: pan-overlay 16s linear infinite;
+}
+.w-full {
+    width: 100%;
+}
+.h-screen {
+    height: 100vh;
+}
+.z-30 {
+    z-index: 30;
+}
+.top-0 {
+    top: 0;
+}
+.left-0 {
+    left: 0;
+}
+.absolute {
+    position: absolute;
+}
+.pointer-events-none {
+    pointer-events: none;
+}
+  
+  
