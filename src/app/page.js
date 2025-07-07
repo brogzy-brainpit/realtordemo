@@ -49,7 +49,7 @@ export default function Home() {
       <Section2 />
     <Services/>
     <Showcase/>
-      <Scroll/>
+      {/* <Scroll/> */}
       {/* <Intro /> */}
       <Description />
       
